@@ -29,7 +29,7 @@ def make_game_library_from_json( json_data ):
 
 
 #Part 2
-input_json_file = "data/test_data.json"
+
 
 ### Begin Add Code Here ###
 #Open the file specified by input_json_file
@@ -37,3 +37,9 @@ input_json_file = "data/test_data.json"
 #Use make_game_library_from_json(json_data) to convert the data to GameLibrary data
 #Print out the resulting GameLibrary data using print()
 ### End Add Code Here ###
+input_json_file = "data/test_data.json"
+
+jsd = json.load(open(input_json_file))
+
+game_lib = make_game_library_from_json(jsd)
+print(game_lib)
